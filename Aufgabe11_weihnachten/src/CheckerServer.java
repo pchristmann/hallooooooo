@@ -13,13 +13,16 @@ public class CheckerServer extends UnicastRemoteObject implements ICheckerServer
 	/**
 	 * 
 	 */
+	
 	private static final long serialVersionUID = -2251502521587129772L;
 	Vector<ICheckClient> waiting_users =  new Vector<ICheckClient>();
 	Hashtable<ICheckClient, Game > games = new Hashtable<ICheckClient, Game>();
 
 	protected CheckerServer() throws RemoteException {
+		
 		super();
 		// TODO Auto-generated constructor stub
+		System.out.println("jfsldkjf");
 	}
 
 	/**
